@@ -1,0 +1,37 @@
+/* styles.css */
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.loading-dots {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 10px;
+}
+
+.loading-dots div {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    animation: blink 1.4s infinite both;
+}
+
+.loading-dots div:nth-child(1) {
+    left: 0;
+    animation-delay: -0.32s;
+}
+
+.loading-dots div:nth-child(2) {
+    left: 15px;
+    animation-delay: -0.16s;
+}
+
+.loading-dots div:nth-child(3) {
+    left: 30px;
+    animation-delay: 0;
+}

@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'FiraCode' monospace;
+}
+
+
+button
+{
+  font-family: 'FiraCode' monospace;
+}
+
+.top-heading
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  color: white;
+  padding: 2vh;
+}
